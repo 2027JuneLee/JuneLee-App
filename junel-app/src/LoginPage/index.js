@@ -17,7 +17,7 @@ const Right = styled.div`
     text-align: center;
     margin-top: 20px;
     width: 50%;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Raccoon_climbing_in_tree_-_Cropped_and_color_corrected.jpg/330px-Raccoon_climbing_in_tree_-_Cropped_and_color_corrected.jpg");
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/0B4ED7B8-6C6A-4031-BEE1253D115FD0CC_source.jpg?w=590&h=800&9717A2E2-EE9D-4CD5-A52BB4E3ED51CBF4");
 `
 const WelcomeTitle = styled.h1`
     color: black;
@@ -30,7 +30,7 @@ const Label = styled.label`
     font-size: 24px;
     color: black;
 `
-const Input = styled.label`
+const Input = styled.input`
     font-family: 'Courier New', Courier, monospace;    
     font-size: 24px;
     color: black;
@@ -41,19 +41,10 @@ function LoginPage() {
     <Wrapper>
         <Left>
             <WelcomeTitle>We Are Happy To See You Back!</WelcomeTitle>
-            <Input>
-                <label for="ID">ID: </label>
-                <input id="ID" type="text" name="text-field" value=""></input>
-            </Input>
-            <br></br>
-            <Input>
-                <label for="PW">Password: </label>
-                <input id="PW" type="password" name="text-field" value=""></input>
-            </Input>
-            <br></br>
-            <Input>
-                <input id="button1" type="button" value="Log In!"/>
-            </Input>
+           <Label>ID: </Label> 
+            <Input></Input>
+            <Label>Password: </Label> 
+            <Input></Input>
         </Left> 
         <Right></Right>
     </Wrapper>
