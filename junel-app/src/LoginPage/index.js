@@ -36,6 +36,14 @@ const Input = styled.input`
     color: black;
 `
 
+const InputButton = styled.button`
+    width: 20%;
+    height: 30px;
+    font-size: 24px;
+    background-color: silver;
+    border-radius: 5px;
+`
+
 function LoginPage() {
     return (   
     <Wrapper>
@@ -43,8 +51,11 @@ function LoginPage() {
             <WelcomeTitle>We Are Happy To See You Back!</WelcomeTitle>
            <Label>ID: </Label> 
             <Input></Input>
+            <br></br>
             <Label>Password: </Label> 
-            <Input></Input>
+            <Input type="password"></Input>
+            <br></br>
+            <InputButton>Log In!</InputButton>
         </Left> 
         <Right></Right>
     </Wrapper>
