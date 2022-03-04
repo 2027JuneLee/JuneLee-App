@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import React, { useState } from "react"
 const Wrapper = styled.div`
     display: flex;
     height: 100vh;
@@ -45,6 +46,15 @@ const InputButton = styled.button`
 `
 
 function LoginPage() {
+    const [user, setUser] = useState({
+        id:"",
+        pw:""
+    })
+    const {id , pw} = user
+    const navigate2Home = () => {
+        alert("Log In Successful!")
+    }
+    
     return (   
     <Wrapper>
         <Left>
@@ -55,7 +65,7 @@ function LoginPage() {
             <Label>Password: </Label> 
             <Input type="password"></Input>
             <br></br>
-            <InputButton>Log In!</InputButton>
+            <InputButton onClick={navigate2Home()}>Log In!</InputButton>
         </Left> 
         <Right></Right>
     </Wrapper>
