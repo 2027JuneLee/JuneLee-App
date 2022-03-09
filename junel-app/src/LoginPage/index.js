@@ -76,8 +76,9 @@ const PutUserInfo = (e) => {
             <WelcomeTitle>We Are Happy To See You Back!</WelcomeTitle>
            <Label>ID: </Label> 
             <Input 
+                autocomplete="off"
                 type="text" 
-                value={id}
+                defaultValue={id}
                 name="id" 
                 onChange={PutUserInfo}>
             </Input>
@@ -85,8 +86,9 @@ const PutUserInfo = (e) => {
             <br></br>
             <Label>Password: </Label> 
             <Input 
+            autocomplete="off"
             type="password"
-            value={password}
+            defaultValue={password}
             name="password"
             onChange={PutUserInfo}
             >
