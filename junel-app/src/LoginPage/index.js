@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React, { useState } from "react"
+import { useHistory } from "react-router-dom"
 const Wrapper = styled.div`
     display: flex;
     height: 100vh;
@@ -46,26 +47,52 @@ const InputButton = styled.button`
 `
 
 function LoginPage() {
+    const history = useHistory()
+
     const [user, setUser] = useState({
         id:"",
-        pw:""
+        password:"",
     })
-    const {id , pw} = user
-    const navigate2Home = () => {
-        alert("Log In Successful!")
+    const {id , password} = user
+
+const navigate2Home = () => {
+        alert("LOGIN SUCCESSFUL!")
+        history.push("/home")
     }
-    
+
+// history location
+
+const PutUserInfo = (e) => {
+    const{name, value} = e.target;
+    console.log(name)
+    console.log(value)
+    useState({...user,[e.target.name]:[e.target.value]});
+    console.log(user.value)
+}
+
     return (   
     <Wrapper>
         <Left>
             <WelcomeTitle>We Are Happy To See You Back!</WelcomeTitle>
            <Label>ID: </Label> 
-            <Input></Input>
+            <Input 
+                type="text" 
+                value={id}
+                name="id" 
+                onChange={PutUserInfo}>
+            </Input>
+            {/* write code to replace empty string to the following input by the user */}
             <br></br>
             <Label>Password: </Label> 
-            <Input type="password"></Input>
+            <Input 
+            type="password"
+            value={password}
+            name="password"
+            onChange={PutUserInfo}
+            >
+            </Input>
             <br></br>
-            <InputButton onClick={navigate2Home()}>Log In!</InputButton>
+            <InputButton onClick={navigate2Home}>Log In!</InputButton>
         </Left> 
         <Right></Right>
     </Wrapper>
