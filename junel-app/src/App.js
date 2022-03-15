@@ -6,8 +6,8 @@ function App() {
   return(
   <div>
       <Router>
-        <Route path="/" component={LoginPage}/>
-        <Route path="/home" component={HomePage}/>
+        <Route exact path="/" component={LoginPage}/>
+        <Route exact path="/home" component={HomePage}/>
 
       </Router>
   </div>

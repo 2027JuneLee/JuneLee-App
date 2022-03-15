@@ -56,9 +56,18 @@ function LoginPage() {
     const {id , password} = user
 
 const navigate2Home = () => {
+    if(id === "" || password === "") {
+        alert("ID OR PASSWORD IS EMPTY!")
+        return
+        }
+        
+    if(id  === "June" && password === "June") {
         alert("LOGIN SUCCESSFUL!")
         history.push("/home")
+        return
+        }
     }
+}
 
 // history location
 
@@ -70,7 +79,7 @@ const PutUserInfo = (e) => {
     console.log(user.value)
 }
 
-    return (   
+return (   
     <Wrapper>
         <Left>
             <WelcomeTitle>We Are Happy To See You Back!</WelcomeTitle>
@@ -99,6 +108,4 @@ const PutUserInfo = (e) => {
         <Right></Right>
     </Wrapper>
     )
- 
-}
 export default LoginPage
