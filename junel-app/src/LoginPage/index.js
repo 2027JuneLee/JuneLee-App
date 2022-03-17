@@ -61,21 +61,17 @@ const navigate2Home = () => {
         return
         }
         
-    if(id  === "June" && password === "June") {
+    if(id  === "June" && password === "1234") {
         alert("LOGIN SUCCESSFUL!")
         history.push("/home")
         return
         }
     }
-}
-
-// history location
-
 const PutUserInfo = (e) => {
     const{name, value} = e.target;
     console.log(name)
     console.log(value)
-    useState({...user,[e.target.name]:[e.target.value]});
+    setUser({...user,[name]:value});
     console.log(user.value)
 }
 
@@ -91,7 +87,6 @@ return (
                 name="id" 
                 onChange={PutUserInfo}>
             </Input>
-            {/* write code to replace empty string to the following input by the user */}
             <br></br>
             <Label>Password: </Label> 
             <Input 
@@ -108,4 +103,5 @@ return (
         <Right></Right>
     </Wrapper>
     )
+}
 export default LoginPage
