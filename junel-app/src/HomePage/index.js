@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
+
 const Wrapper = styled.div`
     display: flex;
     height: 100vh;
@@ -36,12 +37,12 @@ const Bttn = styled.button`
 function Home() {
     const history = useHistory()
     const Archive = () => {
-            alert("ARCHIVE COMING SOON!")
+            alert("GOING TO ARCHIVE!")
             history.push("/archive")
             return
             }
  const SpongeBob = () => {
-            alert("I used to watch SpongeBob!")
+            alert("I guess I used to watch SpongeBob!")
             return
             }
     return(
@@ -100,8 +101,9 @@ function Home() {
                     <img height="150px" width="150px" src="https://c.tenor.com/ocOAaIw44l4AAAAd/earth-orbit.gif"></img>
                 </a>
                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjXoqvo6cv2AhXQsFYBHejYCXwQFnoECAgQAQ&url=https%3A%2F%2Fwww.unicef.org%2F&usg=AOvVaw1O2uknYQB73GM2vRXK9mri">
-                    <img height="150px" width="150px" src="https://c.tenor.com/EWRvErYGzPUAAAAC/bugs-bunny-looney-tunes.gif"></img>
+                    <img height="200px" width="150px" src="https://c.tenor.com/EWRvErYGzPUAAAAC/bugs-bunny-looney-tunes.gif"></img>
                 </a>
+                
             </Right>
         </Wrapper>
     )
