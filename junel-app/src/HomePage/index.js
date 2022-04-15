@@ -14,14 +14,14 @@ const Left = styled.div`
     margin-top: 20px;
     width: 50%;
     background-color: #f48c06;
-    height: 130%;
+    height: 100vh;
     font-family: Garamond, Times, serif;
 `
 const Right = styled.div`
     text-align: center;
     margin-top: 20px;
     width: 50%;
-    height: 130%;
+    height: 100vh;
     background-color: #fff3b0;
     `
 
@@ -101,7 +101,7 @@ function Home() {
                     <img height="150px" width="150px" src="https://c.tenor.com/ocOAaIw44l4AAAAd/earth-orbit.gif"></img>
                 </a>
                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjXoqvo6cv2AhXQsFYBHejYCXwQFnoECAgQAQ&url=https%3A%2F%2Fwww.unicef.org%2F&usg=AOvVaw1O2uknYQB73GM2vRXK9mri">
-                    <img height="200px" width="150px" src="https://c.tenor.com/EWRvErYGzPUAAAAC/bugs-bunny-looney-tunes.gif"></img>
+                    <img height="150px" width="150px" src="https://c.tenor.com/EWRvErYGzPUAAAAC/bugs-bunny-looney-tunes.gif"></img>
                 </a>
                 
             </Right>

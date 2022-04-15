@@ -1,0 +1,8 @@
+.progress-bar {
+    background-color: red;
+    text-align: center;
+    font-size: 12px;
+    background-color: "red";
+    width: "10%";
+    color: red;
+}
