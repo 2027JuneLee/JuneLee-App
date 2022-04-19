@@ -14,6 +14,7 @@ const Left = styled.div`
     margin-top: 20px;
     width: 50%;
     background-color: goldenrod;
+    font-family: 
 `
 const Right = styled.div`
     text-align: center;
@@ -40,10 +41,10 @@ const Input = styled.input`
 
 const InputButton = styled.button`
     width: 20%;
-    height: 30px;
+    height: 50px;
     font-size: 24px;
-    background-color: silver;
-    border-radius: 5px;
+    background-color: #FFF5EE;
+    border-radius: 10px;
 `
 
 function LoginPage() {

@@ -71,9 +71,15 @@ const EduContainer2 = styled.div`
 const Books = styled.div`
     background-color: pink;
     width: 100%;
-    height: 200vh;
+    height: 210vh;
 `
 
+const Bttn = styled.button`
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    border: 2px dotted siena;
+    color: sandy-brown;
+`
     function Archive() {
         const history = useHistory()
         const RickRoll = () => {
@@ -108,9 +114,9 @@ const Books = styled.div`
                   window.alert('Fine, you can stay here!')
               }
         }
-        const Education = () => {
-            alert("EDUCATION PAGE CANCELLED DUE TO OPERATIONAL CONCERNS WHICH SOUNDS FANCY AND ISN'T TRUE.")
-            // history.push("/education")
+        const Web = () => {
+            alert("COMING TRUE INCASE YOU ARE WONDERING")
+            history.push("/web")
             return
                     }
         const Home = () => {
@@ -143,6 +149,7 @@ const Books = styled.div`
                 <a href="mrraccoonmagic.wordpress.com">
                     <img height="50px" width="75px" src="https://mrraccoonmagic.files.wordpress.com/2021/03/raccooon-1.png?strip=info&w=1129"></img>
                 </a>
+                <Bttn onClick={Web}>Web Devlopment Works</Bttn>
                 </Left>
                 <Right>
                     <h1>Starting Words</h1>
@@ -156,8 +163,7 @@ const Books = styled.div`
                         <li>Date of Birth: 2009/07/02</li>
                         <li>Birthplace: Seoul, South Korea</li>
                         <li>Current state of education: G7 at a random international school</li>
-                        <li>Major: Undecided, possible majors are: computer science, biology, world history, etc.</li>
-                        <li>Marriage: No, solo 2009-present</li>
+                        <li>Major: Undecided, possible majors are: computer science, biology, world history, etc. I will choose computer science or something like that, don't worry!</li>
                         <li>Known for: Being a talkative and active guy in school, and for wearing an ice cream costume!</li>
                         <li>Role Model: Anyone who taught me something, escpecially stuff that shaped who I am in the present and future</li>
                     </ol>

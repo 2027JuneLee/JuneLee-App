@@ -6,6 +6,7 @@ const Wrapper = styled.div`
     display: flex;
     height: 100vh;
     color: black;
+    background-image: url(https://static.scientificamerican.com/sciam/cache/file/0B4ED7B8-6C6A-4031-BEE1253D115FD0CC_source.jpg?w=590&h=800&9717A2E2-EE9D-4CD5-A52BB4E3ED51CBF4)
 `
 
 const Left = styled.div`
@@ -14,14 +15,14 @@ const Left = styled.div`
     margin-top: 20px;
     width: 50%;
     background-color: #f48c06;
-    height: 100vh;
+    height: 140vh;
     font-family: Garamond, Times, serif;
 `
 const Right = styled.div`
     text-align: center;
     margin-top: 20px;
     width: 50%;
-    height: 100vh;
+    height: 140vh;
     background-color: #fff3b0;
     `
 
@@ -103,7 +104,6 @@ function Home() {
                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjXoqvo6cv2AhXQsFYBHejYCXwQFnoECAgQAQ&url=https%3A%2F%2Fwww.unicef.org%2F&usg=AOvVaw1O2uknYQB73GM2vRXK9mri">
                     <img height="150px" width="150px" src="https://c.tenor.com/EWRvErYGzPUAAAAC/bugs-bunny-looney-tunes.gif"></img>
                 </a>
-                
             </Right>
         </Wrapper>
     )
